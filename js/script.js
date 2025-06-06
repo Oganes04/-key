@@ -100,6 +100,20 @@ const swiper = new Swiper('.objects-gallery', {
     dragSize: 80,
     snapOnRelease: true,
   },
+  breakpoints: {
+    640: {
+      // При ширине ≥ 640px применяются настройки по умолчанию (уже указаны выше)
+    },
+    // При ширине < 640px
+    0: {
+      effect: 'slide',
+      centeredSlides: false,
+      coverflowEffect: null,
+      slidesPerView: 1,
+      spaceBetween: 8,
+      freeMode: false,
+    }
+  },
   on: {
     setTranslate(swiper) {
       updateScrollbarProgress(swiper);
@@ -222,6 +236,10 @@ $('.popup-project form button').click(function() {
 $('.popup-callme form button').click(function() {
   openPopup($('.popup-thanks'));
 });
+
+
+
+//========================== Реализация галереи объекта ====================
 
 
 
