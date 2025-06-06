@@ -19,7 +19,7 @@
                     <p>Ключ к лучшей <br> недвижимости Крыма!</p>
                 </a>
     
-                <button class="flex">
+                <button class="flex popup-catalog-btn">
                     <img src="../../images/icons/icon-download.svg" alt="download file">
                     <span>Скачать ТОП-5 инвест-предложений в Крыму</span>
                 </button>
@@ -71,7 +71,7 @@
                     </ul>
                 </nav>
     
-                <button class="button">Получить консультацию</button>
+                <button class="button popup-callme-btn">Получить консультацию</button>
             </div>
     
         </div>
@@ -109,7 +109,7 @@
                         </ul>
 
                         <div class="offer__btns flex">
-                            <button class="button grad">Получить расчет доходности</button>
+                            <button class="button grad popup-profit-btn">Получить расчет доходности</button>
                             <button class="button">Посмотреть объекты</button>
                         </div>
                         
@@ -174,7 +174,7 @@
                                     <span>150 000 ₽/м²</span>
                                 </div>
                                 <div class="tag">В кредит от 50 000 ₽/мес</div>
-                                <button class="button grad">Узнать подробнее</button>
+                                <button class="button grad popup-object-info-btn">Узнать подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -209,7 +209,7 @@
                                     <span>150 000 ₽/м²</span>
                                 </div>
                                 <div class="tag">В кредит от 50 000 ₽/мес</div>
-                                <button class="button grad">Узнать подробнее</button>
+                                <button class="button grad popup-object-info-btn">Узнать подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -244,7 +244,7 @@
                                     <span>150 000 ₽/м²</span>
                                 </div>
                                 <div class="tag">В кредит от 50 000 ₽/мес</div>
-                                <button class="button grad">Узнать подробнее</button>
+                                <button class="button grad popup-object-info-btn">Узнать подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -279,7 +279,7 @@
                                     <span>150 000 ₽/м²</span>
                                 </div>
                                 <div class="tag">В кредит от 50 000 ₽/мес</div>
-                                <button class="button grad">Узнать подробнее</button>
+                                <button class="button grad popup-object-info-btn">Узнать подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -314,7 +314,7 @@
                                     <span>150 000 ₽/м²</span>
                                 </div>
                                 <div class="tag">В кредит от 50 000 ₽/мес</div>
-                                <button class="button grad">Узнать подробнее</button>
+                                <button class="button grad popup-object-info-btn">Узнать подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -349,7 +349,7 @@
                                     <span>150 000 ₽/м²</span>
                                 </div>
                                 <div class="tag">В кредит от 50 000 ₽/мес</div>
-                                <button class="button grad">Узнать подробнее</button>
+                                <button class="button grad popup-object-info-btn">Узнать подробнее</button>
                             </div>
                         </article>
                     </li>
@@ -1079,9 +1079,310 @@
         </footer>
         
         
+        <div class="overlay"></div>
+        
+        <section class="popup popup-object-info">
+            <div class="popup-object-info__inner">
+                <div class="popup-object-info__gallery">
+                    <div class="swiper popupGallery2">
+                        <a href="/" class="header__logo flex">
+                            <img src="../../images/logo.png" alt="Юkey">
+                            <p>Ключ к лучшей <br> недвижимости Крыма!</p>
+                        </a>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-1.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-2.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-3.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-4.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper popupGallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-1.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-2.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-3.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/popup-object/popup-object-4.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="popupGallery__btns">
+                            <svg class="popupGallery2-button-prev" width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2052_169)">
+                                <circle cx="57" cy="57" r="32" transform="rotate(-180 57 57)" fill="#415485"/>
+                                </g>
+                                <path d="M49 60.3333L57 52.3333L65 60.3333" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <filter id="filter0_d_2052_169" x="0" y="0" width="114" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="12.5"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.192157 0 0 0 0 0.192157 0 0 0 0.12 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2052_169"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2052_169" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                        
+        
+                            <svg class="popupGallery2-button-next" width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2051_165)">
+                                <circle cx="57" cy="57" r="32" fill="#415485"/>
+                                </g>
+                                <path d="M65 53.6667L57 61.6667L49 53.6667" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <filter id="filter0_d_2051_165" x="0" y="0" width="114" height="114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="12.5"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.192157 0 0 0 0 0.192157 0 0 0 0.12 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2051_165"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2051_165" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="popup-object-info__description">
+                    <h2>Название объекта уместится в две строки</h2>
+                    <p>15 минут до моря, 20 минут до города, 2 минуты до парка, остальные преимущества в три строки.</p>
+                    <h3>Описание объекта:</h3>
+                    <p>Более подробное описание объекта, более подробное описание объекта, более подробное описание объекта, более подробное описание объекта.</p>
+                    <span>Стоимость:</span>
+                    <strong>от 12.345.678 р.</strong>
+                    <button class="button popup-project-btn">Оставить заявку</button>
+                </div>
+            </div>
+        </section>
         
         
         
+        <section class="popup popup-callme">
+            <img src="../../images/popup-bg.svg" alt="">
+            <div class="popup_close">
+        		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.375" y="0.375" width="47.25" height="47.25" rx="4.57345" stroke="white" stroke-width="0.75"/>
+                    <path d="M31.6898 16.3101C32.4216 17.042 32.4216 18.2299 31.6898 18.9618L26.6517 23.9999L31.6898 29.0381C32.0414 29.3897 32.239 29.8666 32.239 30.3639C32.239 30.8612 32.0414 31.3381 31.6898 31.6897C31.3382 32.0414 30.8612 32.2389 30.364 32.2389C29.8667 32.2389 29.3898 32.0413 29.0381 31.6897L24 26.6516L18.9619 31.6897C18.6102 32.0413 18.1333 32.2389 17.636 32.2389C17.1388 32.2389 16.6618 32.0414 16.3102 31.6897C15.9586 31.3381 15.761 30.8612 15.761 30.3639C15.761 29.8666 15.9586 29.3897 16.3102 29.0381L21.3483 23.9999L16.3102 18.9618C15.9586 18.6102 15.761 18.1333 15.761 17.636C15.761 17.1387 15.9586 16.6618 16.3102 16.3101C16.6618 15.9585 17.1388 15.761 17.636 15.761C18.1333 15.761 18.6102 15.9585 18.9619 16.3101L24 21.3483L29.0381 16.3101C29.77 15.5783 30.9579 15.5783 31.6898 16.3101Z" fill="white"/>
+                </svg>            
+        	</div>
+        
+            <h2>Получить консультацию</h2>
+            <p>Заполните формы и мы свяжемся с вами и ответим<br> на все интересующие вас вопросы</p>
+            <form action="">
+                <div class="flex">
+                    <label class="flex">
+                        <span>Как к вам обращаться?</span>
+                        <input type="text" placeholder="Имя">
+                    </label>
+        
+                    <label class="flex">
+                        <span>Ваш номер телефона?</span>
+                        <input type="tel" placeholder="+7 (978) 999-99-99">
+                    </label>
+        
+                    <button class="button grad">Получить</button>
+        
+                    <label class="form__policy flex">
+                        <label class="check-label">
+                            <span class="options__desc"></span>
+                            <input type="checkbox" name="checkbox">
+                            <span class="fakecheck">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="18px" height="18px" id="checkmark">
+                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" 5,12 9,16 18,8"></polyline>
+                                </svg>
+                            </span>
+                        </label> 
+            
+                        <p>Я согласен на <a href="/policy" target="_blank">обработку персональных данных</a></p>
+                    </label>
+                </div>
+            </form>
+        </section>
+        
+        
+        
+        <section class="popup popup-project">
+            <img src="../../images/popup-bg.svg" alt="">
+            <div class="popup_close">
+        		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.375" y="0.375" width="47.25" height="47.25" rx="4.57345" stroke="white" stroke-width="0.75"/>
+                    <path d="M31.6898 16.3101C32.4216 17.042 32.4216 18.2299 31.6898 18.9618L26.6517 23.9999L31.6898 29.0381C32.0414 29.3897 32.239 29.8666 32.239 30.3639C32.239 30.8612 32.0414 31.3381 31.6898 31.6897C31.3382 32.0414 30.8612 32.2389 30.364 32.2389C29.8667 32.2389 29.3898 32.0413 29.0381 31.6897L24 26.6516L18.9619 31.6897C18.6102 32.0413 18.1333 32.2389 17.636 32.2389C17.1388 32.2389 16.6618 32.0414 16.3102 31.6897C15.9586 31.3381 15.761 30.8612 15.761 30.3639C15.761 29.8666 15.9586 29.3897 16.3102 29.0381L21.3483 23.9999L16.3102 18.9618C15.9586 18.6102 15.761 18.1333 15.761 17.636C15.761 17.1387 15.9586 16.6618 16.3102 16.3101C16.6618 15.9585 17.1388 15.761 17.636 15.761C18.1333 15.761 18.6102 15.9585 18.9619 16.3101L24 21.3483L29.0381 16.3101C29.77 15.5783 30.9579 15.5783 31.6898 16.3101Z" fill="white"/>
+                </svg>            
+        	</div>
+        
+            <h2>Проект <span></span></h2>
+            <p>Заполните формы и мы свяжемся с вами и <br> подробнее расскажем о пректе и его сроках</p>
+            <form action="">
+                <div class="flex">
+                    <label class="flex">
+                        <span>Как к вам обращаться?</span>
+                        <input type="text" placeholder="Имя">
+                    </label>
+        
+                    <label class="flex">
+                        <span>Ваш номер телефона?</span>
+                        <input type="tel" placeholder="+7 (978) 999-99-99">
+                    </label>
+        
+                    <button class="button grad">Получить</button>
+        
+                    <label class="form__policy flex">
+                        <label class="check-label">
+                            <span class="options__desc"></span>
+                            <input type="checkbox" name="checkbox">
+                            <span class="fakecheck">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="18px" height="18px" id="checkmark">
+                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" 5,12 9,16 18,8"></polyline>
+                                </svg>
+                            </span>
+                        </label> 
+            
+                        <p>Я согласен на <a href="/policy" target="_blank">обработку персональных данных</a></p>
+                    </label>
+                </div>
+        
+                
+            </form>
+        </section>
+        
+        
+        <section class="popup popup-catalog">
+            <img src="../../images/popup-bg.svg" alt="">
+            <div class="popup_close">
+        		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.375" y="0.375" width="47.25" height="47.25" rx="4.57345" stroke="white" stroke-width="0.75"/>
+                    <path d="M31.6898 16.3101C32.4216 17.042 32.4216 18.2299 31.6898 18.9618L26.6517 23.9999L31.6898 29.0381C32.0414 29.3897 32.239 29.8666 32.239 30.3639C32.239 30.8612 32.0414 31.3381 31.6898 31.6897C31.3382 32.0414 30.8612 32.2389 30.364 32.2389C29.8667 32.2389 29.3898 32.0413 29.0381 31.6897L24 26.6516L18.9619 31.6897C18.6102 32.0413 18.1333 32.2389 17.636 32.2389C17.1388 32.2389 16.6618 32.0414 16.3102 31.6897C15.9586 31.3381 15.761 30.8612 15.761 30.3639C15.761 29.8666 15.9586 29.3897 16.3102 29.0381L21.3483 23.9999L16.3102 18.9618C15.9586 18.6102 15.761 18.1333 15.761 17.636C15.761 17.1387 15.9586 16.6618 16.3102 16.3101C16.6618 15.9585 17.1388 15.761 17.636 15.761C18.1333 15.761 18.6102 15.9585 18.9619 16.3101L24 21.3483L29.0381 16.3101C29.77 15.5783 30.9579 15.5783 31.6898 16.3101Z" fill="white"/>
+                </svg>            
+        	</div>
+        
+            <h2>Получите каталог с ценами</h2>
+            <p>Заполните формы и мы сразу направим вам<br> каталог наших проектов с ценами</p>
+            <form action="">
+                <div class="flex">
+                    <label class="flex">
+                        <span>Как к вам обращаться?</span>
+                        <input type="text" placeholder="Имя">
+                    </label>
+        
+                    <label class="flex">
+                        <span>Ваш номер телефона?</span>
+                        <input type="tel" placeholder="+7 (978) 999-99-99">
+                    </label>
+        
+                    <button class="button grad">Получить</button>
+        
+                    <label class="form__policy flex">
+                        <label class="check-label">
+                            <span class="options__desc"></span>
+                            <input type="checkbox" name="checkbox">
+                            <span class="fakecheck">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="18px" height="18px" id="checkmark">
+                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" 5,12 9,16 18,8"></polyline>
+                                </svg>
+                            </span>
+                        </label> 
+            
+                        <p>Я согласен на <a href="/policy" target="_blank">обработку персональных данных</a></p>
+                    </label>
+                </div>
+        
+                
+            </form>
+        </section>
+        
+        
+        
+        <section class="popup popup-profit">
+            <img src="../../images/popup-bg-2.svg" alt="">
+            <div class="popup_close">
+        		<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.375" y="0.375" width="47.25" height="47.25" rx="4.57345" stroke="white" stroke-width="0.75"/>
+                    <path d="M31.6898 16.3101C32.4216 17.042 32.4216 18.2299 31.6898 18.9618L26.6517 23.9999L31.6898 29.0381C32.0414 29.3897 32.239 29.8666 32.239 30.3639C32.239 30.8612 32.0414 31.3381 31.6898 31.6897C31.3382 32.0414 30.8612 32.2389 30.364 32.2389C29.8667 32.2389 29.3898 32.0413 29.0381 31.6897L24 26.6516L18.9619 31.6897C18.6102 32.0413 18.1333 32.2389 17.636 32.2389C17.1388 32.2389 16.6618 32.0414 16.3102 31.6897C15.9586 31.3381 15.761 30.8612 15.761 30.3639C15.761 29.8666 15.9586 29.3897 16.3102 29.0381L21.3483 23.9999L16.3102 18.9618C15.9586 18.6102 15.761 18.1333 15.761 17.636C15.761 17.1387 15.9586 16.6618 16.3102 16.3101C16.6618 15.9585 17.1388 15.761 17.636 15.761C18.1333 15.761 18.6102 15.9585 18.9619 16.3101L24 21.3483L29.0381 16.3101C29.77 15.5783 30.9579 15.5783 31.6898 16.3101Z" fill="white"/>
+                </svg>            
+        	</div>
+        
+            <h2>Получить расчет доходности</h2>
+            <p>Укажите способ связи и наш менеджер свяжется с вами для уточнения вопросов</p>
+            <form action="">
+                <div class="flex">
+                    <label class="flex">
+                        <span>Как к вам обращаться?</span>
+                        <input type="text" placeholder="Имя">
+                    </label>
+        
+                    <label class="flex">
+                        <span>Ваш номер телефона?</span>
+                        <input type="tel" placeholder="+7 (978) 999-99-99">
+                    </label>
+        
+                    <label class="flex">
+                        <span>Ваш номер телефона?</span>
+                        <span class="select">
+                            <select name="" id="">
+                                <option value="WhatsApp">Получить в WhatsApp</option>
+                                <option value="Telegram">Получить в Telegram</option>
+                            </select>
+                        </span>
+                    </label>
+                    
+        
+                    <label class="form__policy flex">
+                        <label class="check-label">
+                            <span class="options__desc"></span>
+                            <input type="checkbox" name="checkbox">
+                            <span class="fakecheck">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="18px" height="18px" id="checkmark">
+                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" 5,12 9,16 18,8"></polyline>
+                                </svg>
+                            </span>
+                        </label> 
+            
+                        <p>Я согласен на <a href="/policy" target="_blank">обработку персональных данных</a></p>
+                    </label>
+                    <button class="button grad">Получить</button>
+                </div>
+            </form>
+        </section>
+        
+        
+        <section class="popup popup-thanks-catalog">
+            <h2>Cпасибо за вашу заявку!</h2>
+            <p>Наш менеджер совсем скоро свяжется с вам
+                чтобы подробнее рассказать о проектах</p>
+            
+            <a href="" class="button" target="_blank">Забрать каталог с ценами!</a>
+        
+            <a href="index.html" class="button grad link">Вернуться на главную</a>
+        
+        </section>
+        
+        <section class="popup popup-thanks">
+            <h2>Cпасибо за вашу заявку!</h2>
+            <p>Наш менеджер совсем скоро свяжется с вам
+                чтобы подробнее рассказать о проектах</p>
+        
+            <a href="index.html" class="button grad link">Вернуться на главную</a>
+        </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

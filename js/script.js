@@ -136,3 +136,113 @@ $(".faq__item").on("click", function () {
         $header.addClass('open');
     }
 });
+
+
+
+
+
+//========================== Реализация функционала popup окон ====================
+
+function openPopup(popup) {
+  $('.popup').fadeOut();
+  $('.overlay').fadeIn();
+  $('html').css('overflow', 'hidden');
+  popup.fadeIn();
+}
+
+function closePopup(closeBtn) {
+  $('.overlay').fadeOut();
+  closeBtn.parent().fadeOut();
+  $('html').css('overflow-y', 'auto');
+}
+$(document).on('click', '.popup_close', function(e) {
+  closePopup($(this));
+});
+
+$('.popup-object-info-btn').click(function() {
+  openPopup($('.popup-object-info'));
+});
+
+
+$('.popup-callme-btn').click(function() {
+  openPopup($('.popup-callme'));
+});
+
+$('.popup-catalog-btn').click(function() {
+  openPopup($('.popup-catalog'));
+});
+
+$('.popup-profit-btn').click(function() {
+  openPopup($('.popup-profit'));
+});
+
+
+
+
+$('.popup-project-btn').click(function() {
+  let projectTitle = $(this).closest('article').find('h3').text();
+  $('.popup-project h2 span').text(projectTitle);
+  openPopup($('.popup-project'));
+});
+
+
+$(document).ready(function() {
+  $(document).mouseup(function(e) {
+      var container = $('.popup');
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+          container.fadeOut();
+          $('.overlay').fadeOut();
+          $('html').css('overflow-y', 'auto');
+      }
+  });
+
+
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      $('.popup').fadeOut();
+      $('.overlay').fadeOut();
+      $('html').css('overflow-y', 'auto');
+    }
+  });
+});
+
+$('form button').click(function(e) {
+  e.preventDefault();
+});
+
+
+$('.popup-catalog form button').click(function() {
+  openPopup($('.popup-thanks-catalog'));
+});
+
+$('.popup-project form button').click(function() {
+  openPopup($('.popup-thanks'));
+});
+
+$('.popup-callme form button').click(function() {
+  openPopup($('.popup-thanks'));
+});
+
+
+
+var popupGallery = new Swiper(".popupGallery", {
+    loop: true,
+    spaceBetween: 10,
+    direction: "vertical",
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var popupGallery2 = new Swiper(".popupGallery2", {
+    loop: true,
+    spaceBetween: 10,
+      mousewheel: true,
+
+    navigation: {
+      nextEl: ".popupGallery2-button-next",
+      prevEl: ".popupGallery2-button-prev",
+    },
+    thumbs: {
+      swiper: popupGallery,
+    },
+});
