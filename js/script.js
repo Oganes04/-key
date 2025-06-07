@@ -11,12 +11,12 @@ $(".check-label").on("click", function () {
 
 //=================== Маска номера телефона ============
 
- $('input[type="tel"]').inputmask({
-  "mask": "+7 (999) 999 - 99 - 99",
-  "placeholder": "+7 (   )     -    -   ",
-  "showMaskOnHover": false,
-  "showMaskOnFocus": true
-});
+//  $('input[type="tel"]').inputmask({
+//   "mask": "+7 (999) 999 - 99 - 99",
+//   "placeholder": "+7 (   )     -    -   ",
+//   "showMaskOnHover": false,
+//   "showMaskOnFocus": true
+// });
 
 
 //=================== Слайдр галереи ============
