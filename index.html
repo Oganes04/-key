@@ -520,7 +520,16 @@
                 <h2 class="section-header">Ю.key - ключ к лучшей недвижимости Крыма!</h2>
 
                 <div class="team__inner">
-                    <img src="../images/team-bg.webp" alt="">
+                 
+                     <picture>
+                        <source media="(max-width: 640px)" 
+                                srcset="../images/team-bg-adaptive.webp">
+                        <source media="(min-width: 641px)" 
+                                srcset="../images/team-bg.webp">
+                        <img class="offer__bg" 
+                             src="../images/team-bg.webp" 
+                             alt="">
+                    </picture>
                     <ul class="team__items flex">
                         <li class="team__item flex">
                             <img src="../images/team/team-1.webp" alt="">
@@ -1050,7 +1059,7 @@
         
             <div class="footer__bottom">
                 <div class="container flex">
-                    <span>Ⓒ Юkey, 2025. Все права защищены</span>
+                    <p>Ⓒ Юkey, 2025. <span>Все права защищены</span></p>
                     <div class="developed flex">
                         <span>Разработано:</span>
                         <a href="https://arbi-m.com/" target="_blank">
