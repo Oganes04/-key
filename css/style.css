@@ -3533,12 +3533,7 @@ input:not([type=range])::placeholder {
     text-align: left;
   }
 
-  .overlay {
-    display: block;
-  }
-
   .popup-object-info {
-    display: block;
     height: 95%;
   }
 
@@ -3562,6 +3557,7 @@ input:not([type=range])::placeholder {
     flex-direction: row;
     width: clamp(524px * var(--coefficient), 524 * 100vw / var(--device-width), 524px);
     align-items: center;
+    z-index: 10;
   }
 
   .popup-object-info .popupGallery__btns .popupGallery2-button-prev,
