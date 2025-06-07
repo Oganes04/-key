@@ -2402,12 +2402,12 @@ input:not([type=range])::placeholder {
   .offer h1 {
     font-size: clamp(52px * var(--coefficient), 52 * 100vw / var(--device-width), 52px);
     margin-bottom: clamp(32px * var(--coefficient), 32 * 100vw / var(--device-width), 32px);
-    font-weight: 600;
   }
 
   .offer h2 {
     font-size: clamp(40px * var(--coefficient), 40 * 100vw / var(--device-width), 40px);
     margin-bottom: clamp(64px * var(--coefficient), 64 * 100vw / var(--device-width), 64px);
+    font-weight: 500;
   }
 
   .offer ul {
