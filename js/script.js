@@ -250,11 +250,21 @@ var popupGallery = new Swiper(".popupGallery", {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+
+    breakpoints: {
+      640: {
+        // При ширине ≥ 640px применяются настройки по умолчанию (уже указаны выше)
+      },
+      // При ширине < 640px
+      0: {
+        direction: "horizontal",
+      }
+    },
   });
   var popupGallery2 = new Swiper(".popupGallery2", {
     loop: true,
     spaceBetween: 10,
-      mousewheel: true,
+    mousewheel: true,
 
     navigation: {
       nextEl: ".popupGallery2-button-next",
@@ -263,4 +273,32 @@ var popupGallery = new Swiper(".popupGallery", {
     thumbs: {
       swiper: popupGallery,
     },
+
+    breakpoints: {
+      640: {
+        // При ширине ≥ 640px применяются настройки по умолчанию (уже указаны выше)
+      },
+      // При ширине < 640px
+      0: {
+        mousewheel: false,
+      }
+    },
+});
+
+
+
+//========================== Функционал бургер меню ====================
+
+$("#burger_menu").click(function() {
+  $(this).toggleClass('open');
+  $(".header__adaptive").toggleClass("open");
+  // $('html').css('overflow', 'hidden');
+  $('html').toggleClass('hidden');
+});
+
+$(document).on('click', '.header__adaptive nav ul li', function(e) {
+  $('.header__adaptive').removeClass('open');
+  // $('html').css('overflow-y', 'auto');
+  $("#burger_menu").removeClass('open');
+  $('html').removeClass('hidden');
 });
