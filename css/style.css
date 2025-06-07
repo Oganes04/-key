@@ -2402,6 +2402,7 @@ input:not([type=range])::placeholder {
   .offer h1 {
     font-size: clamp(52px * var(--coefficient), 52 * 100vw / var(--device-width), 52px);
     margin-bottom: clamp(32px * var(--coefficient), 32 * 100vw / var(--device-width), 32px);
+    font-weight: 600;
   }
 
   .offer h2 {
