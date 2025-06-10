@@ -194,6 +194,14 @@ h2.section-header {
   font-weight: 600;
   color: #415485;
   margin-bottom: clamp(48px * var(--coefficient), 48 * 100vw / var(--device-width), 48px);
+  position: relative;
+}
+
+.anchor::before {
+  display: block;
+  content: "";
+  height: 200px;
+  margin: -200px 0 0;
 }
 
 /* ========================== Cтили для полей ввода ==================== */
@@ -1314,6 +1322,8 @@ input:not([type=range])::placeholder {
 
 .offer__btns {
   gap: clamp(40px * var(--coefficient), 40 * 100vw / var(--device-width), 40px);
+  position: relative;
+  z-index: 10;
 }
 
 .offer h1 {
@@ -1577,12 +1587,12 @@ input:not([type=range])::placeholder {
 }
 
 .objects {
-  padding-top: clamp(80px * var(--coefficient), 80 * 100vw / var(--device-width), 80px);
   background-color: #FAFAFA;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .objects__filter {
+  padding-top: clamp(80px * var(--coefficient), 80 * 100vw / var(--device-width), 80px);
   gap: clamp(24px * var(--coefficient), 24 * 100vw / var(--device-width), 24px);
   justify-content: center;
   margin-bottom: clamp(48px * var(--coefficient), 48 * 100vw / var(--device-width), 48px);
@@ -1701,8 +1711,7 @@ input:not([type=range])::placeholder {
 .objects .objects-gallery .swiper-scrollbar-drag {
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   z-index: 2;
   cursor: grab;
 }
@@ -2472,14 +2481,15 @@ input:not([type=range])::placeholder {
   }
 
   .offer h1 {
-    font-size: clamp(52px * var(--coefficient), 52 * 100vw / var(--device-width), 52px);
+    font-size: clamp(51px * var(--coefficient), 51 * 100vw / var(--device-width), 51px);
     margin-bottom: clamp(32px * var(--coefficient), 32 * 100vw / var(--device-width), 32px);
-    font-weight: 599;
+    font-weight: 600;
   }
 
   .offer h2 {
     font-size: clamp(40px * var(--coefficient), 40 * 100vw / var(--device-width), 40px);
     margin-bottom: clamp(64px * var(--coefficient), 64 * 100vw / var(--device-width), 64px);
+    font-weight: 500;
   }
 
   .offer ul {

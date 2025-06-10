@@ -56,27 +56,23 @@
                 <nav>
                     <ul class="flex">
                         <li>
-                            <a href="">Пункт меню 1</a>
+                            <a href="#catalog">Каталог</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 2</a>
+                            <a href="#objects">Комплексы</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 3</a>
+                            <a href="#team">Команда</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 4</a>
+                            <a href="#problems">Какие вопросы решаем</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 5</a>
-                        </li>
-    
-                        <li>
-                            <a href="">Пункт меню 6</a>
+                            <a href="#form-excursion">Онлайн-экскурсия</a>
                         </li>
                     </ul>
                 </nav>
@@ -91,28 +87,24 @@
             <div class="header__adaptive-menu flex">
                 <nav>
                     <ul class="flex">
-                        <li>
-                            <a href="#offer">Пункт меню 1</a>
+                       <li>
+                            <a href="#catalog">Каталог</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 2</a>
+                            <a href="#objects">Комплексы</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 3</a>
+                            <a href="#team">Команда</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 4</a>
+                            <a href="#problems">Какие вопросы решаем</a>
                         </li>
     
                         <li>
-                            <a href="">Пункт меню 5</a>
-                        </li>
-    
-                        <li>
-                            <a href="">Пункт меню 6</a>
+                            <a href="#form-excursion">Онлайн-экскурсия</a>
                         </li>
                     </ul>
                 </nav>
@@ -191,7 +183,7 @@
 
         <section class="catalog">
             <div class="container">
-                <h2 class="section-header">Каталог</h2>
+                <h2 class="section-header anchor" id="catalog">Каталог</h2>
 
                 <div class="catalog__filter flex">
                     <button class="active">More.Yalta</button>
@@ -418,10 +410,10 @@
         </section>
 
 
-        <section class="objects">
+        <section class="objects anchor" id="objects">
             <div class="container">
 
-                <div class="objects__filter flex">
+                <div class="objects__filter flex" >
                      <button class="active">More.Yalta</button>
                     <button>Гриновский</button>
                     <button>Аквамарин парк</button>
@@ -542,16 +534,11 @@
                         </p>
                     </div>
 
-                    <span>Выберите, куда отправить прайс</span>
+                    <!-- <span>Выберите, куда отправить прайс</span> -->
 
                     <form action="" class="flex">
 
-                        <span class="select">
-                            <select name="" id="">
-                                <option value="WhatsApp">Получить в WhatsApp</option>
-                                <option value="Telegram">Получить в Telegram</option>
-                            </select>
-                        </span>
+                        <input type="text" placeholder="Имя">
                         <input type="tel" name="" id="" placeholder="+7 (978) 999-99-99">
                         <button class="button grad">Скачать каталог</button>
 
@@ -576,7 +563,7 @@
 
         <section class="team">
             <div class="container">
-                <h2 class="section-header">Ю.key - ключ к лучшей недвижимости Крыма!</h2>
+                <h2 class="section-header anchor" id="team">Ю.key - ключ к лучшей недвижимости Крыма!</h2>
 
                 <div class="team__inner">
                  
@@ -672,7 +659,7 @@
 
         <section class="problems">
             <div class="container">
-                <h2 class="section-header">Частые проблемы, которые мы решаем</h2>
+                <h2 class="section-header anchor" id="problems">Частые проблемы, которые мы решаем</h2>
 
                 <ul class="problems__items flex">
                     <li class="problems__item flex">
@@ -898,7 +885,7 @@
                 <div class="form-excursion__inner flex">
 
                     <div class="form-excursion__info">
-                        <h2>Бесплатная <span>онлайн-экскурсия<br></span> по объектам</h2>
+                        <h2 class="anchor" id="form-excursion">Бесплатная <span>онлайн-экскурсия<br></span> по объектам</h2>
                         <p>Запишитесь на онлайн-просмотр объектов — оцените<br> качество стройки, материалов и получите консультацию по оформлению документов</p>
                     
                         <form action="" class="flex">
@@ -1405,12 +1392,12 @@
         
                     <label class="flex">
                         <span>Ваш номер телефона?</span>
-                        <span class="select">
+                        <!-- <span class="select">
                             <select name="" id="">
                                 <option value="WhatsApp">Получить в WhatsApp</option>
                                 <option value="Telegram">Получить в Telegram</option>
                             </select>
-                        </span>
+                        </span> -->
                     </label>
                     
         
