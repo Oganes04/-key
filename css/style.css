@@ -3518,6 +3518,11 @@ input:not([type=range])::placeholder {
     margin-bottom: clamp(48px * var(--coefficient), 48 * 100vw / var(--device-width), 48px);
   }
 
+  .popup-thanks a.link {
+    margin-top: clamp(16px * var(--coefficient), 16 * 100vw / var(--device-width), 16px);
+    width: 100%;
+  }
+
   .popup-thanks-catalog h2 {
     width: 100% !important;
     margin-bottom: clamp(16px * var(--coefficient), 16 * 100vw / var(--device-width), 16px);
@@ -3529,6 +3534,7 @@ input:not([type=range])::placeholder {
 
   .popup-thanks-catalog a.link {
     margin-top: clamp(16px * var(--coefficient), 16 * 100vw / var(--device-width), 16px);
+    width: 100%;
   }
 
   .popup-profit > img {
