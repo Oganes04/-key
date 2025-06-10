@@ -2481,7 +2481,7 @@ input:not([type=range])::placeholder {
   }
 
   .offer h1 {
-    font-size: clamp(51px * var(--coefficient), 51 * 100vw / var(--device-width), 51px);
+    font-size: clamp(50px * var(--coefficient), 50 * 100vw / var(--device-width), 50px);
     margin-bottom: clamp(32px * var(--coefficient), 32 * 100vw / var(--device-width), 32px);
     font-weight: 600;
   }
